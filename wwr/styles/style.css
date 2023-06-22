@@ -29,7 +29,7 @@ nav a:hover {
     text-align: center;
 }
 main section {
-    text-align: center;
+    
 }
 #background {
     height: 725px;
@@ -146,6 +146,7 @@ h4 {
 .home-grid {
     display: grid;
     grid-template-columns: repeat(10,1fr);
+    text-align: center;
 }
 .rivers-card, .camping-card, .rapids-card {
     margin: 200px 0;
@@ -164,7 +165,7 @@ h4 {
 }
 .card-img {
     border: 10px solid #fcb484;
-    transition: transform .5;
+    transition: transorm(.5);
     box-shadow: 5px 5px 10px #3f4539;
 }
 .card-img, .mountains {
@@ -182,6 +183,48 @@ h4 {
 main section img {
     box-sizing: border-box;
 }
+
+/* Rates Style Below*/
+#trips section {
+    background-color:#6f7364;
+    border: #3f4539 10px solid;
+    border-radius: 50px;
+    color: white;
+    margin: 50px;
+    padding: 20px;
+}
+#rates-title {
+    text-align: center;
+    color: #3f4539;
+}
+#trips {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.grand-3 {
+    grid-column:  1/2;
+    grid-row:  1/2;
+}
+.grand-6 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.salmon-5 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.desolation-6 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+.rate-img {
+    width: 400px;
+    height: 300px;
+    border: #3f4539 5px solid;
+    border-radius: 50px;
+    margin: 10px;
+}
+
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
         display: block;
